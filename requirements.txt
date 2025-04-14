@@ -1,0 +1,6 @@
+Flask
+mysql-connector-python
+PyJWT
+requests
+python-dotenv
+bcrypt
