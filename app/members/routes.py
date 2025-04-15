@@ -30,6 +30,7 @@ def add_member_task1(current_user_id, current_user_role):
             return jsonify({"error": "Missing 'name' or 'email' in request JSON body"}), 400
         new_name = data['name']
         new_email = data['email']
+        new_group_ID = data.get('group',0)
     except Exception as e:
         current_app.logger.error(f"Error parsing add_member request JSON: {e}")
         return jsonify({"error": "Invalid JSON data in request body"}), 400
@@ -52,6 +53,12 @@ def add_member_task1(current_user_id, current_user_role):
             raise mysql.connector.Error("Failed to retrieve last inserted ID from members.")
         current_app.logger.info(f"New member ID: {new_member_id}")
 
+        if new_group_ID:
+            # Insert into MemberGroupMapping (Use correct column names: MemberID, GroupID)
+            sql_insert_membergroup = "INSERT INTO MemberGroupMapping (MemberID, GroupID) VALUES (%s, %s)"
+            cursor.execute(sql_insert_membergroup, (new_member_id, new_group_ID))
+            current_app.logger.info(f"Executed INSERT MemberGroupMapping for '{new_name}'.")
+
         # Hash default password (using MD5 for consistency as decided earlier)
         default_password = current_app.config['DEFAULT_PASSWORD']
         hashed_default_password = hashlib.md5(default_password.encode()).hexdigest()
@@ -63,12 +70,18 @@ def add_member_task1(current_user_id, current_user_role):
 
         conn.commit()
         current_app.logger.info(f"DB transaction committed for new member {new_member_id}.")
-
-        return jsonify({
-            "message": "Task 1 Success: Member created and login entry added (using local auth).",
-            "member_id": new_member_id,
-            "MemberID": new_member_id,
-        }), 201
+        if new_group_ID:
+            return jsonify({
+                "message": "Task 1 Success: Member created and login entry added (using local auth).",
+                "member_id": new_member_id,
+                "MemberID": new_member_id,
+                "Group_ID": new_group_ID
+            }), 201
+        else: return jsonify({
+                "message": "Task 1 Success: Member created and login entry added (using local auth).",
+                "member_id": new_member_id,
+                "MemberID": new_member_id
+            }), 201
 
     except mysql.connector.Error as db_err:
         current_app.logger.error(f"Database Error during Task 1: {db_err}")
@@ -235,7 +248,7 @@ def delete_member_task3(current_user_id, current_user_role, member_id_to_delete)
 
         else:
             # Case 2: Member IS in other groups - Delete only specific mapping
-            our_group_id = current_app.config.get('GROUP_ID', 'cs432g2') # Get from config
+            our_group_id = current_app.config.get('GROUP_ID', 'cs432g3') # Get from config
             current_app.logger.info(f"MemberID {member_id_to_delete} has group mappings. Deleting mapping for group '{our_group_id}'.")
 
             # Delete specific mapping (Use correct table/column names: MemberGroupMapping, MemberID, GroupID)

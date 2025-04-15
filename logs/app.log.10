@@ -1,0 +1,106 @@
+2025-04-15 01:09:39,889 - app - INFO - CS432 API Startup
+2025-04-15 01:09:40,340 - app - INFO - CS432 API Startup
+2025-04-15 01:10:30,884 - app - INFO - Request received at LOCAL /login endpoint
+2025-04-15 01:10:31,076 - app - INFO - Password matched (Plain Text) for MemberID 1414.
+2025-04-15 01:10:31,077 - app - INFO - Credentials valid for MemberID 1414. Role: admin. Generating local JWT.
+2025-04-15 01:10:31,079 - app - INFO - Local JWT generated for MemberID 1414.
+2025-04-15 01:11:18,624 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 01:11:18,625 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 01:12:56,501 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 01:12:56,503 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 01:13:06,779 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 01:13:06,780 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 01:14:04,613 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 01:14:04,614 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 01:14:50,565 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 01:14:50,566 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 01:14:59,159 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 01:14:59,160 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 01:15:35,354 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 01:15:35,355 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 15:49:31,442 - app - INFO - CS432 API Startup
+2025-04-15 15:49:32,876 - app - INFO - CS432 API Startup
+2025-04-15 15:50:33,609 - app - INFO - Request received at LOCAL /login endpoint
+2025-04-15 15:50:33,611 - app - WARNING - Local Login attempt missing 'user' or 'password'.
+2025-04-15 15:52:34,919 - app - INFO - Request received at LOCAL /login endpoint
+2025-04-15 15:52:35,320 - app - INFO - Password matched (Plain Text) for MemberID 1414.
+2025-04-15 15:52:35,322 - app - INFO - Credentials valid for MemberID 1414. Role: admin. Generating local JWT.
+2025-04-15 15:52:35,328 - app - INFO - Local JWT generated for MemberID 1414.
+2025-04-15 15:55:23,802 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 15:55:23,803 - app - INFO - Request: /insert/Students by user 1414, role: admin with method POST
+2025-04-15 15:55:23,805 - app - INFO - User 1414 (role: admin) authorized to insert into table Students.
+2025-04-15 15:55:57,327 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 15:55:57,327 - app - INFO - Request: /insert/Students by user 1414, role: admin with method POST
+2025-04-15 15:55:57,343 - app - INFO - User 1414 (role: admin) authorized to insert into table Students.
+2025-04-15 15:55:57,500 - app - ERROR - Insertion error: 1062 (23000): Duplicate entry '12345' for key 'Students.PRIMARY'
+2025-04-15 15:56:06,474 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 15:56:06,475 - app - INFO - Request: /insert/Students by user 1414, role: admin with method POST
+2025-04-15 15:56:06,476 - app - INFO - User 1414 (role: admin) authorized to insert into table Students.
+2025-04-15 15:56:06,634 - app - ERROR - Insertion error: 1062 (23000): Duplicate entry 'john.doe@example.com' for key 'Students.Email_id'
+2025-04-15 15:56:39,304 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 15:56:39,305 - app - INFO - Request: /update/Students by user 1414, role: admin with method POST
+2025-04-15 15:56:39,308 - app - INFO - User 1414 (role: admin) authorized to insert into table Students.
+2025-04-15 15:57:51,511 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 15:57:51,512 - app - INFO - Request: /update/Students by user 1414, role: admin with method POST
+2025-04-15 15:57:51,514 - app - INFO - User 1414 (role: admin) authorized to insert into table Students.
+2025-04-15 15:58:49,214 - app - INFO - CS432 API Startup
+2025-04-15 16:01:17,937 - app - INFO - Request received at LOCAL /login endpoint
+2025-04-15 16:01:17,940 - app - WARNING - Local Login attempt missing 'user' or 'password'.
+2025-04-15 16:01:33,675 - app - INFO - Request received at LOCAL /login endpoint
+2025-04-15 16:01:33,876 - app - INFO - Password matched (Plain Text) for MemberID 1414.
+2025-04-15 16:01:33,878 - app - INFO - Credentials valid for MemberID 1414. Role: admin. Generating local JWT.
+2025-04-15 16:01:33,879 - app - INFO - Local JWT generated for MemberID 1414.
+2025-04-15 16:03:13,624 - app - INFO - CS432 API Startup
+2025-04-15 16:03:16,166 - app - INFO - CS432 API Startup
+2025-04-15 16:03:38,037 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:03:38,038 - app - INFO - Search request on table: Students by user 1414, role: admin 
+2025-04-15 16:03:52,702 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:03:52,703 - app - INFO - Search request on table: Students by user 1414, role: admin 
+2025-04-15 16:04:05,473 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:04:05,474 - app - INFO - Search request on table: Students by user 1414, role: admin 
+2025-04-15 16:04:30,597 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:04:30,598 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 16:04:42,309 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:04:42,310 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 16:06:01,506 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:06:01,507 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 16:06:24,334 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:06:24,336 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 16:06:31,637 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:06:31,639 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 16:06:38,094 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:06:38,095 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 16:06:45,532 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:06:45,533 - app - INFO - Delete request on table Students by user 1414, role: admin 
+2025-04-15 16:07:59,110 - app - INFO - Request received at LOCAL /login endpoint
+2025-04-15 16:07:59,264 - app - INFO - Password matched (MD5) for MemberID 2124.
+2025-04-15 16:07:59,265 - app - INFO - Credentials valid for MemberID 2124. Role: user. Generating local JWT.
+2025-04-15 16:07:59,267 - app - INFO - Local JWT generated for MemberID 2124.
+2025-04-15 16:08:53,928 - app - INFO - Token validated via decorator for user ID: 2124, Role: user
+2025-04-15 16:08:53,929 - app - INFO - Search request on table: Students by user 2124, role: user 
+2025-04-15 16:09:03,140 - app - INFO - Token validated via decorator for user ID: 2124, Role: user
+2025-04-15 16:09:03,142 - app - INFO - Search request on table: Students by user 2124, role: user 
+2025-04-15 16:09:17,299 - app - INFO - Token validated via decorator for user ID: 2124, Role: user
+2025-04-15 16:09:17,300 - app - INFO - Search request on table: Students by user 2124, role: user 
+2025-04-15 16:09:33,905 - app - INFO - Token validated via decorator for user ID: 2124, Role: user
+2025-04-15 16:09:33,906 - app - INFO - Request: /insert/Students by user 2124, role: user with method POST
+2025-04-15 16:09:33,908 - app - WARNING - Unauthorized attempt to insert into admin table: Students
+2025-04-15 16:09:46,615 - app - INFO - Token validated via decorator for user ID: 2124, Role: user
+2025-04-15 16:09:46,616 - app - INFO - Delete request on table Students by user 2124, role: user 
+2025-04-15 16:09:52,700 - app - INFO - Token validated via decorator for user ID: 2124, Role: user
+2025-04-15 16:09:52,702 - app - INFO - Request: /update/Students by user 2124, role: user with method POST
+2025-04-15 16:09:52,703 - app - WARNING - Unauthorized update attempt to admin table: Students
+2025-04-15 16:10:36,087 - app - INFO - Token validated via decorator for user ID: 2124, Role: user
+2025-04-15 16:10:36,088 - app - INFO - Request: /profile/me by user ID: 2124, Role: user
+2025-04-15 16:10:36,249 - app - INFO - Retrieved profile for user ID: 2124
+2025-04-15 16:11:17,660 - app - INFO - Token validated via decorator for user ID: 2124, Role: user
+2025-04-15 16:11:17,661 - app - INFO - Request: /admin/profile/2124 by user ID: 2124, Role: user
+2025-04-15 16:11:17,663 - app - WARNING - Access denied: User 2124 (Role: user) is not admin for /admin/profile.
+2025-04-15 16:11:52,670 - app - INFO - Request received at LOCAL /login endpoint
+2025-04-15 16:11:52,835 - app - INFO - Password matched (Plain Text) for MemberID 1414.
+2025-04-15 16:11:52,837 - app - INFO - Credentials valid for MemberID 1414. Role: admin. Generating local JWT.
+2025-04-15 16:11:52,840 - app - INFO - Local JWT generated for MemberID 1414.
+2025-04-15 16:12:32,995 - app - INFO - Token validated via decorator for user ID: 1414, Role: admin
+2025-04-15 16:12:32,997 - app - INFO - Request: /admin/profile/2124 by user ID: 1414, Role: admin
+2025-04-15 16:12:32,999 - app - INFO - Admin user 1414 authorized. Fetching profile for target: 2124
+2025-04-15 16:12:33,157 - app - INFO - Admin 1414 retrieved profile for ID: 2124

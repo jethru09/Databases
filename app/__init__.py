@@ -44,11 +44,19 @@ def create_app(config_class=Config):
     # Register Blueprints
     from .auth.routes import auth_bp
     from .members.routes import members_bp
-    from .CRUD.new import insert_bp
+    from .CRUD.insert import insert_bp
+    from .CRUD.update import update_bp
+    from .CRUD.search import search_bp
+    from .CRUD.delete import delete_bp
+    from .CRUD.search_join import search_join_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(members_bp)
     app.register_blueprint(insert_bp) 
+    app.register_blueprint(update_bp)
+    app.register_blueprint(delete_bp)
+    app.register_blueprint(search_bp)
+    app.register_blueprint(search_join_bp)
 
     # Simple default route (optional)
     @app.route('/')
